@@ -1,0 +1,37 @@
+.row {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	font-size: 16px;
+
+	.title {
+		font-size: 20px;
+	}
+
+	// 按钮文本有字间距
+	.btnText {
+		transition: 0.5s;
+		color: #0037FF;
+		letter-spacing: 1.5px;
+		cursor: pointer;
+		user-select: none;
+		&:hover {
+			opacity: 0.5;
+		}
+		&:active {
+			opacity: 1;
+		}
+	}
+}

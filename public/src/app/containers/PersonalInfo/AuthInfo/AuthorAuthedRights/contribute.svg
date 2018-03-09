@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="19px" viewBox="0 0 16 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="2.00478928 7.70483378 2.00478928 0.512203781 16 0.513513514 16 19 2 19 2 11.8108108"></polyline>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="14" height="18.4877962" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M4.52045045,8.47297297 L4.55115586,6.17006699 L0.41331023,9.80791262 L4.45560089,13.3366898 L4.48621622,11.0405405 L8,11.0405405 L8,8.47297297 L4.52045045,8.47297297 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="7.53553391" height="7.26217775" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人信息" transform="translate(-735.000000, -778.000000)">
+            <g id="Group-5" transform="translate(450.000000, 706.000000)">
+                <g id="Group-3" transform="translate(144.000000, 70.000000)">
+                    <g id="Group-2">
+                        <g id="Group" transform="translate(141.000000, 2.000000)">
+                            <use id="Rectangle-3" stroke="#000411" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                            <rect id="Rectangle-4" fill="#000411" x="5.5" y="5.64864865" width="7.5" height="1.02702703"></rect>
+                            <rect id="Rectangle-4-Copy" fill="#000411" x="7.5" y="7.7027027" width="5.5" height="1.02702703"></rect>
+                            <use id="Combined-Shape" stroke="#000411" mask="url(#mask-4)" stroke-width="2" transform="translate(4.232233, 9.756757) scale(-1, 1) translate(-4.232233, -9.756757) " xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

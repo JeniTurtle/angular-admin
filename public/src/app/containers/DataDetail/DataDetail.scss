@@ -1,0 +1,66 @@
+.container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	padding-top: 56px;
+	padding-bottom: 20px;
+	color: #4a4a4a;
+
+	.contentContainer {
+		margin-top: 20px;
+		position: relative;
+		width: 780px;
+		padding: 20px 40px 50px;
+		background: #fff;
+		font-size: 16px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	}
+
+	.chart {
+		position: relative;
+		height: 600px;
+		margin: 5px auto;
+		background: rgba(0, 0, 0, .1);
+	}
+
+	table {
+		text-align: center !important;
+		border: 1px solid #0037ff !important;
+		td {
+			border: 1px solid #0037ff !important;
+		}
+		th {
+			text-align: center !important;
+			border: 1px solid #fff !important;
+		}
+		thead {
+			background: #0037ff;
+			color: #fff;
+			border: 1px solid #0037ff !important;
+		}
+	}
+
+	h1 {
+		color: #666;
+		padding: 10px 0;
+		font-size: 22px;
+		border-bottom: 1px solid #eee;
+	}
+
+	h2 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		color: #666;
+		font-size: 18px;
+	}
+}

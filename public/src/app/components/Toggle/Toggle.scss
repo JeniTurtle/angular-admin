@@ -1,0 +1,32 @@
+.wrapper {
+	position: relative;
+	width: 50px;
+	height: 30px;
+	border-radius: 15px;
+	border: 1px solid rgba(0,0,0,.1);
+	cursor: pointer;
+
+	div {
+		position: absolute;
+		top: 0;
+		background: white;
+		border-radius: 14px;
+		width: 28px;
+		height: 28px;
+	}
+
+	&.enable {
+		div {
+			right: 0;
+		}
+		background: #44DB5E;
+	}
+
+	&.disable {
+		div {
+			left: 0;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+	}
+
+}

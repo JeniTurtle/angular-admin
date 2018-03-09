@@ -1,0 +1,62 @@
+
+.hisworksForm {
+}
+
+// 添加代表作
+.addMagnumOpusItem {
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: 157px;
+	display: inline-block;
+
+	.button {
+		transition: 0.5s;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		width: 98px;
+		height: 30px;
+		border: 1px solid #002FDA;
+		border-radius: 100px;
+		font-size: 14px;
+		color: #0037FF;
+		letter-spacing: 0;
+		cursor: pointer;
+
+		&:hover {
+			border-color: rgba(0, 55, 255, 0.7);
+			color: rgba(0, 55, 255, 0.7);
+		}
+
+		&:active {
+			box-shadow: 0 0 0 1px #0037FF;
+			color: #0037FF;
+			border-color: #0037FF;
+		}
+	}
+
+	.errorTips {
+		width: 300px;
+		position: absolute;
+		top: 55px;
+		/* 该项不能为空: */
+		font-family: MicrosoftSansSerif;
+		font-size: 14px;
+		color: #FF3B30;
+		letter-spacing: 0.17px;
+	}
+}
+
+

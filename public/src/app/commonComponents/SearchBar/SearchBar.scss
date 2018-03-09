@@ -1,0 +1,36 @@
+.searchBar {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 32px;
+	border: 1px solid #DBDBDB;
+	border-radius: 100px;
+	background: #fff;
+
+	.input {
+		font-size: 14px;
+		color: #9B9B9B;
+		letter-spacing: 0.17px;
+		margin-left: 17px;
+		width: 100%;
+		height: 30px; // 调为30是因为32会遮盖住上下边线
+		margin-top: -1px; // 再向上移动1px为了使文字垂直居中
+
+		// 设置placeholder属性
+		&::placeholder {
+			color: #9B9B9B;
+		}
+	}
+
+	.icon {
+		margin-right: 12px;
+	}
+}

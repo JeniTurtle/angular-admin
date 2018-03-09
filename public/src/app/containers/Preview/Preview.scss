@@ -1,0 +1,106 @@
+
+.title {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container {
+
+	position: fixed;
+	margin-left: -6px;
+	width: 371px;
+
+}
+
+.wrapper {
+
+	padding-top: 100px;
+	width: 100%;
+
+	.mode {
+		position: relative;
+		width: 790px;
+		height: 160px;
+		margin: 20px auto;
+		padding: 0 100px;
+		background: #fff;
+
+		div {
+			position: relative;
+			width: 290px;
+			float: left;
+			height: 100%;
+
+			img {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 50px;
+				height: 32px;
+				margin: -16px -25px;
+				cursor: pointer;
+
+				&.mobile {
+					width: 28px;
+					height: 46px;
+					margin: -23px -14px;
+				}
+			}
+
+			p {
+				width: 100%;
+				margin-top: 106px;
+				text-align: center;
+				font-size: 14px;
+				color: #9b9b9b;
+
+				&.active {
+					color: #000;
+				}
+			}
+		}
+
+	}
+
+	.phone {
+		position: relative;
+		width: 790px;
+		margin: 20px auto;
+		background: #fff;
+
+		.iphoneImg {
+			margin: 30px auto;
+			width: 371px;
+			display: block;
+		}
+
+		.frame {
+			position: absolute;
+			background: white;
+			left: 229px;
+			top: 120px;
+			width: 325px;
+			height: 567px;
+			border: none;
+		}
+	}
+
+	.pc {
+
+		position: relative;
+		width: 100%;
+		margin: 20px auto 0;
+		background: #f6f6f6;
+
+		.pcFrame {
+			position: relative;
+			width: 100%;
+			height: auto;
+			border: none;
+		}
+
+	}
+
+}

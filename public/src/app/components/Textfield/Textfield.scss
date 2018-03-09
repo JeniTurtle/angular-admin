@@ -1,0 +1,32 @@
+.wrapper {
+
+	position: relative;
+	font-size: 16px;
+
+	.input, .textarea {
+		padding: 10px;
+
+		&.needPadding {
+			padding-right: 64px;
+		}
+	}
+
+	.textarea {
+		resize: none;		
+	}
+
+	.counter, .warningCounter {
+		display: block;
+		position: absolute;
+		right: 10px;
+		bottom: 6px;
+	}
+
+	.counter {
+		color: #999;
+	}
+
+	.warningCounter {
+		color: #970a0a;
+	}
+}

@@ -1,0 +1,227 @@
+.card {
+	position: relative;
+	height: 281px;
+	background: #fff;
+	margin-top: 10px;
+	font-size: 14px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+	border-radius: 2px;
+
+	.content {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		.freeCopy {
+			color: #0037ff;
+			text-decoration: none;
+
+			&:hover {
+				color: #5F82FF;
+			}
+		}
+
+		.detail {
+			position: relative;
+			padding-left: 45px;
+			width: 450px;
+
+			.title {
+				font-size: 20px;
+				font-weight: bold;
+				width: 1000px;
+				height: 100px;
+				line-height: 100px;
+
+				a:hover {
+					color: #5f82ff !important;
+				}
+			}
+
+			.desc {
+				display: block;
+				line-height: 20px;
+				height: 40px;
+				overflow: hidden;
+				text-align: justify;
+
+				&:hover {
+					color: #5f82ff !important;
+				}
+			}
+
+			.subscript {
+				position: absolute;
+				left: 44px;
+				top: 160px;
+				color: #9b9b9b;
+
+				> span:last-child {
+					float: right;
+					font-size: 14px;
+				}
+
+				> span:first-child {
+					float: left;
+					font-size: 14px;
+				}
+
+			}
+		}
+
+		.writingStatus {
+			-webkit-flex: 1;
+			flex: 1;
+			text-align: center;
+			padding-top: 100px;
+			line-height: 20px;
+
+			.pass:before {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				width: 12px;
+				height: 12px;
+				border-radius: 6px;
+				background: #44db5e;
+				content: ' ';
+			}
+
+			.fail:before {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 5px;
+				width: 12px;
+				height: 12px;
+				border-radius: 7px;
+				border: 1px solid #ff3b30;
+				content: ' ';
+			}
+		}
+
+		.sellStatus {
+			width: 80px;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		.workStatus {
+			position: relative;
+			width: 120px;
+			text-align: center;
+			padding-top: 100px;
+
+			.stateTip {
+				position: absolute;
+				width: 300px;
+				top: 40px;
+				right: 20px;
+				text-align: right;
+				color: #9b9b9b;
+			}
+
+			a {
+				color: #0037ff;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.copy {
+
+		display: inline-block;
+		padding-left: 20px;
+		font-size: 14px;
+		vertical-align: top;
+
+		.nocopyright {
+			color: #999;
+		}
+
+		.copyright:before {
+			display: inline-block;
+			content: '';
+			width: 16px;
+			height: 20px;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAoCAYAAADpE0oSAAAAAXNSR0IArs4c6QAABOlJREFUWAnFWF1sVEUU/k63LVRaW6v8CIEWFWJti78Y1JrG6gMGkwatPBhSqRYwaqTog9EYRUN4UuwDkBQwTTRoQtQHNJoAqVQDQkMliDYxtalRW8Xy0xRKsdvu+M29e/fu3J27W7SNp7k7c86cM+dnZs6ZqSAZdqvlGMcGkpYC6trkoX/flzMQdPBrxlo54M0jTqdFXcX2XSpb5w1MSSuyAzl4CQ1yOdtRINgKNcVKtSKlnkVUxtl7QbBL1UDhIImu944lU/gjohj26mzE0ERTJqw0izYtLgJuvBrIZ7y6BoGf+I3GJmisdlBJUza1L6PHGaEkH3j5NmBlKTA7z2Qfp/yhfuD148C3f5ljVow6BTtVLFOYN1YCW7jPp0Ws0xjEj3uB1W0ZIiAympVJ6Vt3Ae8sm5hSbUHdQmBPDaCXJBS4ymnHH5wLvHa7Xfz0CHCUYb0YTR1/jMo30eB0IGiJha7wqTqg/BpT/PtzQP1XgG415ND09WXA24xKbpIbF2jQ/D3AkMUwQKJJrO5E3m/19alKO88A9+/zlWreKHfzth+BhkOepNsW5LgGmVQfcxOIjyd6tSWJbqKzqRPQntjgox7gxSXAvBlAO3d4+x/AgT4bp0sLVVw1xxTqGQK++NWkBbGaz8MNC/KGhrq82GT9jmEO3Qxx1rBomDO5mFVxYS6QFziz2uPJBKviIioOQv+lIOW/4VbFA5dTJ52rC+ckglXxpbHU86eLQibQS2Sd0CIYynfyrMl9x3U89iYpBdPptX81sKMKqGHWi6QRCFV8+E9zXu3xw/NNWhB7aB4wi5XrGWaygytYqWqDHD4eqviTXp/J671xJzAj5OQ/cRNQVuRxuu2Xv5l4MhaqWKfHjoFkVt4AZwJtjwCl+Sb98RuA7feZNI29351K8yhpi8TdVHSE4cqyrFXXeaCbZ3sJE83CAm86v/3wZ9ZlFhM7SDStYi3UVAFsvccuHkY9zkhVfwaM6GudFZzqJKys4dD8A/BUe+rxCpPQxaF2fzqljuQIPVYsauqWsIk8+szpvJPSe13kbw5sIu1ZJ73cfALY/7snka6Vk/rOtYXXn1fSsQXHiqe565rPmqtzeN9w5gJiziFvCt5TBRgDA6oWmINThIn0Yjoqs/C0XGCea2BemuQyYDFcZJi61qBeht1zvFbamA95rZNjFvbJIYkcYUG/FY3ytZ7QPKH6lr8L+vAs5VdMRnNcS1wJ8M3Av7P0sgONOAb9fPm/wfSoRVXRxw1JRo0R70E2tvFpaZaNFlXJsXrysm7xVS04gULGa5WMJuRb1SJE8SrxHqyTzQk6O8GUv4BHqy6ZgaHiHVYeJb2CoeJlltCqSjHK0CnFWhQHzTcoOh8855HIM5unZQ3ljpJmKA4pEtLNBP08BVxmpcrQCha9OIxiJSfM4/gA+Tay/SA+ssJjydQGPXb5BX38t8F2B9nJx7RSeqP5lx+hJ+42aSdfM/bSiPPkF2aECYJdsSkcmuqp3B1b5eT7KzqKYYpzuY5zaP8sTl7o2DEGv5goDDo0QQV2qxLyLOYD/1PSYlgvLr9pfApmV6zUvdwYrDNx0Gu5CHyYxCGCbxxflSpn+4tHZlo45ffT98zNJbSYL7mk72/2u5gA6vGA+OvXKIedTQVuQshFfkPOzo3gSUNdhOaLnCbtnEEn8g9FVVj0IfNsgAAAAABJRU5ErkJggg==");
+			background-size: 100% 100%;
+			vertical-align: middle;
+		}
+
+		.nocopyright:before {
+			display: inline-block;
+			margin-right: 5px;
+			content: '';
+			width: 16px;
+			height: 20px;
+			background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAUCAYAAACEYr13AAAAAXNSR0IArs4c6QAAAixJREFUOBGFUsuOElEQrW6aN+ERoEkwQZsAa93PN+jalTHjwsksjbNwMR8w2/kGP8DMxs2sXKmJK6MJCIEIQgIseGh4NPScujO3cy9pM5VUuu6pc+pW3yrD8zyz3W6/2e/3J0TkwO+zgWma76E7r9fra+tOfHGfSsk/wGVnhmGkgJ2aOLxWkiIMh8OUzWapVCpRoVCgRCJxSOHzMboIG81m01Oz6XSaisUi4QYVpuVySaPRSMMsy3pkqkgkEiHbtoV4tVrRZDKhxWIhKKlUinK5nEpnnmGpiCRsNhvq9/t+ynVd4s5wo4/JQENisZjAZ7OZzIvvdDol9iDTfoEfj2273QZxAzGtACYiSJhzIDkI1Jj872zxeFzj8tlxHDEdLYGDVmA+n4s8P5icPXeTz+cpFApRNBo91JP2iFwgk8kIYrlcJn59Fsqd4LEemonkWAV5fDyF3W4nxsbi9XpNg8GAeDekAd8nk8kJd/AB/komsJ40Ho+F8+38sIwF2DWWbmliOd6i2scAgujiP+Iv0Byzxl/4TqfzEG07SPhYUFGk+9Vq9Re+oi3xiL1er4oRXkHgoeWvjUbjJYtbrdYlOjjCJK5qtdo5YgPYN4ifyOKiABJRuI3EU/h1t9t9h3MGG/kC4meIn8OZy5v2GDFotx34ewDAxXv8RNKFyMAIQ4zh/B2iznA4jMhb1a8oABL/jw0RD/pTpVL5g5Z/IP4M/430EfbiH2Lm/ZW3I6Yba5zwv8o5tccAAAAASUVORK5CYII=");
+			background-size: 100% 100%;
+			vertical-align: middle;
+		}
+	}
+
+	.footer {
+		position: absolute;
+		width: 100%;
+		height: 72px;
+		border-top: 1px solid #dbdbdb;
+		bottom: 0;
+		left: 0;
+		padding-left: 44px;
+
+		.btns {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+		}
+
+		.plusInfo {
+			color: #9b9b9b;
+			padding-right: 40px;
+			line-height: 72px;
+		}
+
+		.btn {
+			position: relative;
+			top: 20px;
+			width: 100px;
+			height: 32px;
+			border-radius: 16px;
+			text-align: center;
+			line-height: 32px;
+			border: 1px solid #0037ff;
+			color: #0037ff;
+			float: right;
+			margin-right: 20px;
+			cursor: pointer;
+			text-decoration: none;
+
+			&:hover {
+				border: 1px solid #5F82FF;
+				color: #5F82FF;
+			}
+		}
+	}
+
+	.tip {
+		color: #DBDBDB;
+		padding-right: 5px;
+		vertical-align: baseline;
+		cursor: pointer;
+
+		&:hover {
+			color: #9b9b9b;
+		}
+	}
+
+}
+
+
+

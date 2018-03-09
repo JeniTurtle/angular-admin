@@ -1,0 +1,19 @@
+.label {
+	font-size: 14px;
+	display: block;
+	position: relative;
+	padding: 0;
+
+	&.withColon:after {
+		content: '：';
+	}
+
+	&.required:before {
+		position: inline-block;
+		padding-right: 3px;
+		margin-left: -10px;
+		content: '*';
+		color: #ff3b30;
+	}
+
+}

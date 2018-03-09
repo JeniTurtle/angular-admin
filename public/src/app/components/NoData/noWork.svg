@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="175px" viewBox="0 0 175 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>作品@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="778" y="408" width="32" height="8"></rect>
+        <path d="M797.901129,341.801865 C797.901129,335.588662 802.936887,330.551865 809.159225,330.551865 L814.719745,330.551865 C820.93742,330.551865 825.977841,335.587295 825.977841,341.801865 L825.977841,353.051865 L797.901129,353.051865 L797.901129,341.801865 Z" id="path-2"></path>
+        <rect id="path-3" x="817" y="408" width="38" height="8"></rect>
+        <rect id="path-4" x="813" y="402" width="35" height="8"></rect>
+        <rect id="path-5" x="817" y="397" width="35" height="7"></rect>
+        <rect id="path-6" x="815" y="393" width="31" height="6"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关注的作品-空页面" transform="translate(-743.000000, -280.000000)">
+            <polygon id="Rectangle-2" fill-opacity="0.2" fill="#CCD7FF" points="809 359.888672 829.280019 341 889.931329 414.667236 820.158662 414.667236"></polygon>
+            <rect id="Rectangle-8" fill="#666870" x="765" y="414" width="132" height="2"></rect>
+            <rect id="Rectangle-9" stroke="#666870" stroke-width="2" x="862" y="392" width="21" height="23"></rect>
+            <path d="M883,397 L887,397 C889.2115,397 891,398.789426 891,401.007544 L891,403.992456 C891,406.203983 889.205297,408 887,408 L883,408 L883,397 Z" id="Rectangle" stroke="#666870" stroke-width="2"></path>
+            <g id="Rectangle-10">
+                <use fill="#CCD7FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#666870" stroke-width="2" x="779" y="409" width="30" height="6"></rect>
+            </g>
+            <g id="Rectangle-12" transform="translate(811.939485, 341.801865) rotate(-43.000000) translate(-811.939485, -341.801865) ">
+                <use fill="#CCD7FF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <path stroke="#666870" stroke-width="2" d="M824.977841,352.051865 L798.901129,352.051865 L798.901129,341.801865 C798.901129,336.139433 803.490685,331.551865 809.159225,331.551865 L814.719745,331.551865 C820.385787,331.551865 824.977841,336.140232 824.977841,341.801865 L824.977841,352.051865 Z"></path>
+            </g>
+            <path d="M800.606125,351.380249 L800.606125,341.130249 C800.606125,335.467818 805.195681,330.880249 810.864221,330.880249 L816.424741,330.880249 C822.090783,330.880249 826.682837,335.468616 826.682837,341.130249 L826.682837,351.380249 L818.65818,351.380249 L817.65818,351.380249 L817.65818,352.380249 C817.65818,354.588775 815.861797,356.380249 813.644481,356.380249 C811.427165,356.380249 809.630783,354.588775 809.630783,352.380249 L809.630783,351.380249 L808.630783,351.380249 L800.606125,351.380249 Z" id="Combined-Shape" stroke="#666870" stroke-width="2" transform="translate(813.644481, 343.630249) rotate(-43.000000) translate(-813.644481, -343.630249) "></path>
+            <path d="M806.39255,335.589003 L796.861043,335.589003 L796.861043,331.589003 C796.861043,329.380432 798.649826,327.589003 800.851862,327.589003 L802.401732,327.589003 C804.603278,327.589003 806.39255,329.382958 806.39255,331.589003 L806.39255,335.589003 Z" id="Rectangle-12-Copy" stroke="#666870" stroke-width="2" transform="translate(801.626797, 331.589003) rotate(-43.000000) translate(-801.626797, -331.589003) "></path>
+            <polyline id="Path-4" stroke="#666870" stroke-width="2" points="799.27256 336 771 361.935547 795.266008 409.571777"></polyline>
+            <g id="Rectangle-3">
+                <use fill="#F5F5F6" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <rect stroke="#666870" stroke-width="2" x="818" y="409" width="36" height="6"></rect>
+            </g>
+            <g id="Rectangle-3-Copy">
+                <use fill="#F5F5F6" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <rect stroke="#666870" stroke-width="2" x="814" y="403" width="33" height="6"></rect>
+            </g>
+            <g id="Rectangle-3-Copy-2">
+                <use fill="#F5F5F6" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <rect stroke="#666870" stroke-width="2" x="818" y="398" width="33" height="5"></rect>
+            </g>
+            <g id="Rectangle-3-Copy-3">
+                <use fill="#F5F5F6" fill-rule="evenodd" xlink:href="#path-6"></use>
+                <rect stroke="#666870" stroke-width="2" x="816" y="394" width="29" height="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

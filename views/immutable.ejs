@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>ImmutableJS测试</title>
+		<script src="//cdn.bootcss.com/immutable/3.8.1/immutable.js"></script>
+	</head>
+	<body>
+		<script>
+			console.info('0', Immutable.fromJS(0));
+			console.info('undefined', Immutable.fromJS(undefined));
+			//Map不会做递归转化
+			console.info('Map Constructor', Immutable.Map({
+				a: [1,2,3],
+				b: {c: 'd', e: 4}
+			}));
+
+			var a = Immutable.fromJS({
+				a: [1,2,3],
+				b: {c: 'd', e: 4}
+			});
+
+			console.info('fromJS', a);
+			console.info('multiple fromJS', Immutable.fromJS(a));
+			console.info('ToJS 1 level', a.toObject());
+
+
+			var b = Immutable.List([{
+				a: [{
+					a: [{
+						a: {b: 1}
+					}]
+				}]
+			}]).flatMap(function(item) {
+				console.info('jiba', item);
+				return item.a;
+			}).toJS();
+
+			console.info('flatMap', b);
+		</script>
+	</body>
+</html>

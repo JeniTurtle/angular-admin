@@ -1,0 +1,237 @@
+.popupBack {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #000;
+	filter: alpha(opacity=20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+}
+
+.popupBox {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 101;
+
+	.popupParent {
+		position: relative;
+		width: 660px;
+		height: 320px;
+		margin: 0 auto;
+		top: 50%;
+
+		.popupChild {
+			position: relative;
+			width: 660px;
+			height: 320px;
+			top: -50%;
+			background: #fff;
+			border-radius: 4px;
+			box-shadow:0px 0px 20px #555;
+			-moz-box-shadow:0px 0px 20px #555;
+
+			.popupTitle {
+				height: 42px;
+				line-height: 42px;
+				font-size: 16px;
+				color: #4A4A4A;
+				text-indent: 20px;
+				background: #F6F6F6;
+				float: left;
+				width: 100%;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+
+				.close {
+					float: right;
+					font-size: 24px;
+					line-height: 36px;
+					padding-right: 12px;
+					color: #9B9B9B;
+					cursor: pointer;
+				}
+			}
+
+			.popupContent {
+				width: 100%;
+				float: left;
+				text-align: center;
+				padding-top: 30px;
+
+				.qrCode {
+					width: 140px;
+					height: 140px;
+					margin-bottom: 20px;
+				}
+
+				.gray {
+					line-height: 36px;
+					color: #707070;
+				}
+			}
+		}
+	}
+}
+
+.container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	padding: 56px 0;
+	color: #4a4a4a;
+
+	.contentContainer {
+
+		position: relative;
+		width: 780px;
+		margin-top: 20px;
+		background: #FFFFFF;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+		.breadcrumbs {
+			height: 20px;
+			width: 100%;
+			float: left;
+			margin-bottom: 20px;
+		}
+
+		.tips {
+			width: 100%;
+			height: 60px;
+			border: 1px solid #DADADA;
+			float: left;
+			border-bottom: 0;
+			background: #FFFBCB;
+			line-height: 60px;
+			text-align: center;
+			font-size: 16px;
+			color: #4A4A4A;
+		}
+
+		.authInfoContent {
+			float: left;
+			width: 100%;
+			padding: 20px 40px 70px;
+
+			.row {
+				width: 100%;
+				line-height: 50px;
+				float: left;
+
+				p {
+					font-size: 16px;
+					color: #4A4A4A;
+					float: left;
+
+					&:nth-child(1) {
+						width: 120px;
+					}
+
+					span {
+						padding-right: 16px;
+
+						img {
+							height: 18px;
+							padding-right: 6px;
+							margin-top: -2px;
+						}
+					}
+				}
+				.updateBtn {
+					float: right;
+					font-size: 16px;
+					color: #0037FF;
+					text-decoration: none;
+					cursor: pointer;
+				}
+				.strong {
+					font-size: 20px;
+					color: #000000;
+				}
+				.green {
+					color: #44DB5E;
+				}
+				.red {
+					color: #ed5565;
+				}
+				.black {
+					color: #000000;
+				}
+
+				.img_parent_box {
+					width: 288px;
+					height: 200px;
+					float: left;
+				}
+
+				.img_box {
+					width: 140px;
+					height: 140px;
+					border: 1px solid #DADADA;
+					position: relative;
+					float: left;
+					overflow: hidden;
+					margin-top: 17px;
+
+					.picture {
+						width: 100%;
+					}
+
+					.img_back {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: #000000;
+						filter: alpha(opacity=30);
+						-moz-opacity: 0.3;
+						opacity: 0.3;
+						top: 0;
+						left: 0;
+						z-index: 0;
+					}
+
+					.shuiyin {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						z-index: 2;
+						color: #fff;
+						transform:rotate(-45deg);
+						-ms-transform:rotate(-45deg); 	/* IE 9 */
+						-moz-transform:rotate(-45deg); 	/* Firefox */
+						-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+						-o-transform:rotate(-45deg); 	/* Opera */
+						text-align: center;
+						line-height: 140px;
+						font-size: 18px;
+					}
+				}
+
+				.img_alt {
+					float: left;
+					width: 140px;
+					margin-right: 140px;
+					text-align: center;
+				}
+			}
+		}
+
+		.loadingContainer {
+			position: relative;
+			width: 100%;
+			height: 100px;
+		}
+	}
+}

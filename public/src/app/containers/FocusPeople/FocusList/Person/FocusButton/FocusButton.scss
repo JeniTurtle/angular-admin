@@ -1,0 +1,52 @@
+.focusButton, .focusButtonAlready {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 72px;
+	height: 28px;
+	border-radius: 100px;
+	user-select: none;
+	cursor: pointer;
+
+	.text {
+		font-size: 14px;
+		color: #FFFFFF;
+		letter-spacing: 0.17px;
+	}
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 1;
+	}
+}
+
+.focusButton {
+	background: #44DB5E;
+
+	&:active {
+		background: #2DA544;
+	}
+}
+
+.focusButtonAlready {
+	background: #DBDBDB;
+
+	&:active {
+		background: #C0C0C0;
+	}
+}

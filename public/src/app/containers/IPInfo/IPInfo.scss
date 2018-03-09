@@ -1,0 +1,266 @@
+// @Author: chenming
+// @Date:   2017-01-17T20:59:16+08:00
+// @Last modified by:   chenming
+// @Last modified time: 2017-02-10T10:45:37+08:00
+
+
+
+.container {
+	position: relative;
+	width: 940px;
+	margin: 120px auto;
+	padding: 0;
+	min-height: 100%;
+
+	.typeField{
+		font-size:14px;
+		margin-bottom:20px;
+		color:#4a4a4a;
+		padding:0;
+		.selectedMain, .selectedSub{
+			float:left;
+		}
+	}
+	.clearfix{
+		clear:both;
+	}
+
+	label {
+		font-size: 14px;
+	}
+
+	.form {
+		margin-top: 20px;
+		padding: 40px;
+		border: 1px solid #dbdbdb;
+		background: #fff;
+		font-size: 16px;
+
+		.fieldSet {
+			margin-bottom: 5px;
+		}
+	}
+
+	.moreContent {
+
+		margin: 15px 0;
+		font-size: 16px;
+
+		b {
+			cursor: pointer;
+		}
+
+	}
+
+	.next {
+		display: block;
+		position: relative;
+		margin: 30px auto;
+		width: 240px;
+		height: 48px;
+		border-radius: 24px;
+		background: #0037ff;
+		color: #fff;
+		font-size: 16px;
+		line-height: 48px;
+		text-align: center;
+		cursor: pointer;
+		text-decoration: none;
+
+		&:hover {
+			background: #5F82FF;
+		}
+
+	}
+
+
+	.protocol {
+		font-size: 16px;
+		text-align: center;
+
+		a {
+			color: #0037FF;
+			text-decoration: underline;
+
+			&:hover {
+				color: #5F82FF;
+			}
+
+		}
+	}
+
+	.cpAuthor {
+
+		margin-bottom: 20px;
+
+		.authorSpan {
+			display: inline-block;
+			font-size: 16px;
+			height: 32px;
+			line-height: 32px;
+			padding-left: 20px;
+		}
+
+		.authorButton {
+			width: 100px;
+			height: 32px;
+			border: 1px solid #0037ff;
+			border-radius: 16px;
+			font-size: 14px;
+			color: #0037ff;
+			line-height: 30px;
+			text-align: center;
+			cursor: pointer;
+			float: left;
+		}
+	}
+
+	.repeatTip{
+		clear:both;
+		padding-left:160px;
+		height:30px;
+		font-size:14px;
+		position:relative;
+		color:#ff3b30;
+		.repeatLink{
+			color:#0037ff;
+		}
+	}
+
+
+}
+
+.modal {
+
+	.checkbox {
+		float: left;
+		margin: 100px 130px;
+		transform: scale(2);
+	}
+
+	.authorAddBtn {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		width: 100px;
+		height: 32px;
+		font-size: 14px;
+		background: #0037ff;
+		color: #fff;
+		line-height: 32px;
+		border-radius: 16px;
+		text-align: center;
+	}
+
+	.search {
+		width: 240px;
+		height: 30px;
+		margin: 0 10px 10px;
+		line-height: 30px;
+
+		div {
+			padding: 0;
+		}
+
+		.input {
+			padding-right: 40px;
+			border-radius: 16px;
+		}
+
+		.searchicon {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-image: url("data:image/png;base64,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");
+			background-size: 100% 100%;
+			top: 6px;
+			right: 10px;
+			cursor: pointer;
+		}
+
+		.removeicon {
+
+			position: absolute;
+			color: #0037ff;
+			top: 10px;
+			right: 35px;
+			cursor: pointer;
+
+		}
+	}
+
+	.author {
+
+		margin: 15px 0;
+
+		img {
+			width: 24px;
+			height: 24px;
+			border-radius: 12px;
+			border: 1px solid #DBDBDB;
+			vertical-align: middle;
+			margin: 0 5px;
+		}
+
+		span {
+			display: inline-block;
+			width: 120px;
+			vertical-align: middle;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+	}
+
+	:global {
+
+		.modal-dialog {
+
+			width: 660px !important;
+			margin-top: 100px !important;
+
+		}
+
+		.modal-header {
+			text-align: left;
+			height: 42px;
+			background: #f6f6f6;
+			border-radius: 6px 6px 0 0;
+		}
+
+		.modal-body {
+			padding: 20px;
+			max-height: 400px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		.modal-footer {
+			text-align: center;
+			border: none;
+
+			button {
+				width: 66px;
+				height: 34px;
+				font-size: 14px;
+				line-height: 34px;
+				padding: 0;
+				color: #fff;
+				background: #0037ff;
+				border: none;
+				float: right;
+				margin-left: 20px;
+
+				&.cancel {
+					background: #fff;
+					color: #707070;
+					line-height: 32px;
+					border: 1px solid #DBDBDB;
+				}
+			}
+		}
+
+	}
+
+}

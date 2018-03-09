@@ -1,0 +1,218 @@
+:global {
+
+	.headerWrapper {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 9;
+
+		.header {
+			position: relative;
+			width: 100%;
+			height: 56px;
+			font-size: 14px;
+			color: #434C5F;
+			letter-spacing: 0;
+			background: #fff;
+
+			.warningWrapper {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 10px;
+				text-align: center;
+
+				.warning {
+					position: relative;
+					width: 100%;
+					z-index: 10;
+					//background: red;
+
+					.text {
+						position: relative;
+						display: inline-block;
+						padding: 0 30px 0 30px;
+						height: 36px;
+						line-height: 36px;
+						text-align: center;
+						font-size: 14px;
+						background: #FFFAEB;
+						color: #000;
+						border: 1px solid #FFBF00;
+						border-radius: 4px;
+
+						.icon-guanbi {
+							position: absolute;
+							right: 5px;
+							cursor: pointer;
+						}
+
+						a {
+							-webkit-transition: 0.3s;
+							-moz-transition: 0.3s;
+							-ms-transition: 0.3s;
+							-o-transition: 0.3s;
+							transition: 0.3s;
+							color: #0076ff;
+							text-decoration: none;
+
+							&:hover {
+								color: #62abff;
+							}
+						}
+					}
+
+					.downloadLink {
+						display: inline-block;
+						margin-left: 20px;
+					}
+				}
+			}
+
+			.header-inner {
+				position: relative;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				-moz-justify-content: space-between;
+				-ms-justify-content: space-between;
+				-o-justify-content: space-between;
+				justify-content: space-between;
+				-webkit-align-items: center;
+				-moz-align-items: center;
+				-ms-align-items: center;
+				-o-align-items: center;
+				align-items: center;
+				width: 1024px;
+				//background: red;
+				height: 100%;
+				margin: 0 auto;
+
+				.imgLogo {
+					vertical-align: middle;
+				}
+
+				.toAuth {
+					position: absolute;
+					right: -70px;
+					top: 21px;
+					font-size: 14px;
+					&:hover {
+						color: #9b9b9b;
+					}
+				}
+
+				a {
+					float: left;
+					display: block;
+					padding: 0;
+					vertical-align: middle;
+					text-decoration: none;
+					cursor: pointer;
+
+					&:hover {
+						color: #5F82FF;
+						// border-bottom: 2px solid #0037ff;
+					}
+
+					&.active {
+						color: #0037ff;
+						// border-bottom: 2px solid #0037ff;
+					}
+				}
+
+				.sicon {
+					display: inline-block;
+					width: 14px;
+					height: 14px;
+					line-height: 14px;
+					font-size: 12px;
+					//border-radius: 3px;
+					text-align: center;
+					vertical-align: middle;
+					padding: 0;
+					color: #fff;
+					//font-family: '-webkit-pictograph';
+				}
+
+				.home {
+					font-size: 14px;
+					float: right;
+					height: 56px;
+					line-height: 55px;
+
+					> a {
+						> img {
+							width: 24px;
+							height: 24px;
+							vertical-align: middle;
+							border-radius: 12px;
+							background: #dbdbdb;
+						}
+
+						.name {
+							display: inline-block;
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							//width: 75px;
+							padding: 0 10px 0 10px;
+							vertical-align: middle;
+							font-size: 14px;
+							color: #434C5F;
+							letter-spacing: 0;
+						}
+					}
+
+					&:hover {
+						.nav-layer {
+							display: block;
+						}
+					}
+
+				}
+				.nav-layer {
+					display: none;
+					position: absolute;
+					background: #fff;
+					right: 0;
+					text-align: center;
+					line-height: 20px;
+					top: 55px;
+					box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+
+					.ulist {
+						display: -webkit-box;
+						display: -moz-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-flex-direction: column;
+						-moz-flex-direction: column;
+						-ms-flex-direction: column;
+						-o-flex-direction: column;
+						flex-direction: column;
+
+						.uitem {
+							display: block;
+							width: 116px;
+							height: 40px;
+							line-height: 40px;
+							text-align: center;
+							font-size: 14px;
+							color: #8C96A9;
+
+							&:hover {
+								background: #f5f5f5;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+// @Author: chenming
+// @Date:   2017-01-17T20:59:16+08:00
+// @Last modified by:   chenming
+// @Last modified time: 2017-02-10T16:49:35+08:00
+
+.wrapper {
+
+	position: relative;
+	font-size: 16px;
+
+	.label {
+
+		display: block;
+
+		&:after {
+			content: '：';
+		}
+
+		&.required:before {
+			position: absolute;
+			top: 3px;
+			left: -10px;
+			content: '*';
+			color: #ff3b30;
+		}
+
+	}
+
+	.buttonWrapper {
+		padding: 0 8px 10px 0 !important;
+		.button {
+			width: 100%;
+			color: #707070;
+
+			&:hover {
+				background: #fff;
+				color: #5f82ff;
+				border-color: #5F82FF;
+			}
+		}
+	}
+
+	:global {
+
+		.btn {
+			font-size: 16px;
+		}
+
+		.btn-primary {
+			color: #0037ff !important;
+			border-color: #0037ff !important;
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAAAXNSR0IArs4c6QAAAQ1JREFUOBGl07FOwzAQBuDfgXYoEltG3qASYzOAhITEQLp1Z2Co+kgR4gG6dWBrpaoZeQ9WRliCdNzvEKWR7SQlJyWxffanc2QDQ+NWYiRywI1ckzKDPGIF9hBM1fnECPdn/wabGJmJwnFkQRGjZd/Zdp+Xi3GvB8R4imAxvKq+x0yWnZ4fyxVL8Wa+IyTIFHnWh/8za0X9GCt7JMZiuOWtUj/saIRRP5bjEvMKqwBoVQul1rrtc8tCW8AK7+bF9sNYiq35+ltjP/WxCaFjbI6ORrnWgJU5GJM1yJ4f/dDMFdM2WjDmmyBHXJSjZXRgnOSCHPWhPTAuDQfRRArFxd7VB7kIT+6bKdEdTsB+ARUZdNzK2Bf5AAAAAElFTkSuQmCC');
+			background-size: 10px 7px;
+			background-repeat: no-repeat;
+			background-color: #fff;
+			background-position: 140px center;
+		}
+	}
+
+	button[disabled], button.disabled {
+
+		cursor: default !important;
+
+		&:hover {
+			background: #fff !important;
+			color: #707070 !important;
+			border-color: #ccc !important;
+		}
+	}
+}

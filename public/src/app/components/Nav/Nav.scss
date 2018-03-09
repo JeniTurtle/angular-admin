@@ -1,0 +1,67 @@
+.navWrapper {
+	height: 100%;
+	padding-top: 20px;
+}
+
+.nav {
+	margin: 0 20px 0 0;
+	width: 135px;
+	height: 100%;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+	box-sizing: border-box;
+
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.item, .itemSelected, .itemNew {
+		position: relative;
+		height: 53px;
+		line-height: 53px;
+		padding-left: 30px;
+		font-size: 15px;
+		color: #999BA0;
+		letter-spacing: 0;
+		user-select: none;
+		cursor: pointer;
+
+		&:hover {
+			background: #F5F5F5;
+		}
+	}
+
+	.itemSelected {
+		position: relative;
+		font-weight: bold;
+		font-size: 15px;
+		color: #434C5F;
+		letter-spacing: 0;
+
+		&:before {
+			position: absolute;
+			left: 0;
+			top: 17px;
+			content: '';
+			width: 3px;
+			height: 18px;
+			background: #000;
+		}
+	}
+
+	.itemNew {
+
+		&:after {
+			position: absolute;
+			content: '';
+			top: 15px;
+			right: 36px;
+			width: 8px;
+			height: 8px;
+			background: red;
+			border-radius: 50%;
+		}
+	}
+}

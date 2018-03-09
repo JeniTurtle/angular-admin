@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="185px" height="50px" viewBox="0 0 185 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>步骤</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录注册-copy-2" transform="translate(-167.000000, -339.000000)">
+            <g id="Group-2-Copy-8" transform="translate(70.000000, 192.000000)">
+                <g id="步骤" transform="translate(97.500000, 148.000000)">
+                    <rect id="Rectangle-15" fill="#DBDBDB" x="42" y="12" width="116" height="1"></rect>
+                    <ellipse id="Oval" stroke="#0037FF" fill="#FFFFFF" cx="30" cy="12" rx="12" ry="12"></ellipse>
+                    <circle id="Oval-Copy" stroke="#DBDBDB" fill="#FFFFFF" cx="161" cy="12" r="12"></circle>
+                    <text id="1" font-family="MicrosoftSansSerif, Microsoft Sans Serif" font-size="14" font-weight="normal" fill="#0037FF">
+                        <tspan x="26" y="17">1</tspan>
+                    </text>
+                    <text id="2" font-family="MicrosoftSansSerif, Microsoft Sans Serif" font-size="14" font-weight="normal" fill="#DBDBDB">
+                        <tspan x="157" y="17">2</tspan>
+                    </text>
+                    <text id="验证手机号" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#0037FF">
+                        <tspan x="0" y="47">验证手机号</tspan>
+                    </text>
+                    <text id="重置密码" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#D0D3D9">
+                        <tspan x="137" y="47">重置密码</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

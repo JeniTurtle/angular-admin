@@ -1,0 +1,103 @@
+.authInfo {
+	margin: 40px 40px 0 40px;
+
+	.row1 {
+		position: relative;
+		margin-top: 30px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		font-size: 16px;
+		color: #4A4A4A;
+		letter-spacing: 1.5px;
+		line-height: 20px;
+
+		.authState {
+			position: absolute;
+			left: 120px;
+
+			.icon {
+				margin-left: 6px;
+			}
+
+			.detail {
+				margin-left: 12px;
+				font-family: PingFangSC-Regular;
+				font-size: 16px;
+				color: #999BA0;
+				letter-spacing: 1.5px;
+				line-height: 20px;
+			}
+		}
+
+		.authBtn, .authedBtn, .audittingBtn, .auditFailBtn {
+			transition: 0.5s;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			position: absolute;
+			right: 0;
+			height: 30px;
+			padding: 0 8px;
+			background: #FFFFFF;
+			border-radius: 4px;
+			font-family: MicrosoftSansSerif;
+			font-size: 14px;
+			letter-spacing: 0.17px;
+			user-select: none;
+			cursor: pointer;
+			&:hover {
+				opacity: 0.5;
+			}
+			&:active {
+				opacity: 1;
+			}
+		}
+
+		.authBtn {
+			border: 1px solid #FF3B30;
+			color: #FF3B30;
+		}
+
+		.audittingBtn {
+			border: 1px solid #DBDBDB;
+			color: #707070;
+		}
+
+		.auditFailBtn {
+			border: 1px solid #FF3B30;
+			color: #FF3B30;
+		}
+
+		.authedBtn {
+			border: 1px solid #44DB5E;
+			color: #44DB5E;
+		}
+	}
+
+	.authorAuthedRights {
+		margin-top: 20px;
+	}
+
+}
+
+

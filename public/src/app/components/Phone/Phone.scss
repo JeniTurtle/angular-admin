@@ -1,0 +1,47 @@
+.iphoneImg {
+	display: block;
+	width: 100%;
+}
+
+.frame {
+	position: absolute;
+    background: white;
+    left: 24px;
+    top: 90px;
+    width: 320px;
+    height: 567px;
+    border: none;
+}
+
+.title {
+	margin-top: 30px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.container {
+
+	position: fixed;
+	margin-left: -6px;
+	width: 371px;
+
+}
+
+.wrapper {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%; 
+
+	.container {
+
+		top: 0;
+		left: 50%;
+		margin: 120px -186px;
+
+	}
+
+}

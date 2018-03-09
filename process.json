@@ -1,0 +1,37 @@
+{
+  "apps": [{
+    "name": "user",
+    "script": "server.js",
+    "exec_mode": "cluster",
+    "instances": "max",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "merge_logs": true,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }],
+  "deploy": {
+    "production": {
+      "user": "work",
+      "host": ["10.10.124.34", "10.10.144.133"],
+      "ref": "origin/master",
+      "repo": "git@github.com:yunlaiwu/user.git",
+      "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
+      "path": "/home/work/node/servers/user",
+      "pre-deploy": "git pull",
+      "post-deploy": "npm install --production && pm2 startOrReload process.json --env production"
+    },
+    "dev": {
+      "user": "work",
+      "host": ["10.10.85.164"],
+      "ref": "origin/stefan-2.0",
+      "repo": "git@github.com:yunlaiwu/user.git",
+      "ssh_options": ["StrictHostKeyChecking=no", "PasswordAuthentication=no"],
+      "path": "/home/work/node/servers/user",
+      "post-deploy": "npm install --production && pm2 startOrReload process.json --env production"
+    }
+  }
+}

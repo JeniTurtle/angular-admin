@@ -1,0 +1,208 @@
+.container{
+  position: relative;
+  width:940px;
+  margin: 130px auto 100px auto;
+  border:1px solid #dadada;
+  padding: 30px 40px 60px 40px;
+  .label{
+    position: absolute;
+    top:95px;
+    right:40px;
+    width:110px;
+    height:110px;
+    border: 1px solid #000411;
+    text-align: center;
+    .status,.status2{
+      font-size: 28px;
+      color:#000411;
+      margin-top:20px;
+    }
+    .status2{
+      margin-top:35px;
+    }
+    .lastDays{
+      font-size: 16px;
+      color: #4A4A4A;
+      margin-top:13px;
+    }
+    &.succ{
+      border-color:#44db5e;
+      .status2{
+        color:#44db5e;
+      }
+    }
+    &.fail{
+      border-color:#ff3b30;
+      .status2{
+        color:#ff3b30;
+      }
+    }
+  }
+  .title{
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0.21px;
+  }
+  .desc{
+    font-size: 20px;
+    color: #000000;
+    margin-top:40px;
+  }
+  .jumpChunk{
+    display:block;
+    text-decoration: none;
+    color:#4a4a4a;
+    &:hover{
+      color:#0037ff;
+    }
+  }
+  .infos{
+    font-size: 14px;
+    margin-top:10px;
+    &:nth-of-type(1){
+      margin-top:20px;
+    }
+  }
+  .horizontalLine{
+    margin:40px 0;
+    width:100%;
+    height:1px;
+    background:#dadada;
+  }
+
+  .stepCont{
+    &.gray .stepMark{
+      border-color:#9b9b9b;
+    }
+    &.gray .stepLine{
+      background:#9b9b9b;
+    }
+    .step{
+      height:32px;
+      line-height: 32px;
+    }
+    .stepMark{
+      float:left;
+      width:32px;
+      height:32px;
+      border-radius: 32px;
+      border:1px solid #0037ff;
+      text-align: center;
+      line-height:32px;
+      color:#0037ff;
+      &.done{
+        border:0 none;
+      }
+      &.gray{
+        color:#9b9b9b;
+        border-color:#9b9b9b;
+      }
+    }
+    .stepTitle{
+      float:left;
+      margin-left:10px;
+    }
+    .stepDate{
+      float:right;
+      font-size: 14px;
+      color: #9B9B9B;
+      letter-spacing: 1.31px;
+    }
+    .stepDesc{
+      font-size: 14px;
+      color: #4A4A4A;
+      letter-spacing: 1.31px;
+      text-indent:42px;
+      clear:both;
+    }
+    .stepLine{
+      min-height:40px;
+      width:1px;
+      background: #0037ff;
+      position: relative;
+      left:16px;
+      &.gray{
+        background:#9b9b9b;
+      }
+      &.big{
+        min-height:75px;
+      }
+    }
+  }
+  .clearfix{
+    clear:both;
+  }
+}
+
+.modal {
+
+  :global {
+
+    .modal-dialog {
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      width: 660px !important;
+      height: 332px;
+      margin: -166px -330px !important;
+
+    }
+
+    .modal-header {
+      text-align: left;
+      line-height: 40px;
+      height: 42px;
+      background: #f6f6f6;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .modal-body {
+      img {
+        display: block;
+        width: 130px;
+        height: 130px;
+        margin: 20px auto 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #9B9B9B;
+        text-align: center;
+      }
+
+    }
+
+  }
+
+}
+
+        .scan {
+          position:relative;
+          margin:60px auto;
+          border: 1px solid #0037ff;
+          color: #0037ff;
+          text-align: center;
+          width: 240px;
+          height: 48px;
+          line-height: 48px;
+          border-radius: 48px;
+          cursor: pointer;
+          font-size:16px;
+          display:block;
+          text-dercoration:none;
+          &:hover {
+            color: #5F82FF;
+            border-color: #5F82FF;
+            text-dercoration:none;
+            img {
+              opacity: .5;
+            }
+          }
+
+          img {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+        }

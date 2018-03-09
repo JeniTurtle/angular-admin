@@ -1,0 +1,47 @@
+.container {
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 940px;
+	height: 90px;
+	line-height: 90px;
+	border: 1px solid #dbdbdb;
+	background: #fff;
+	padding: 0;
+
+	> span {
+		display: block;
+		width: 30px;
+		font-size: 30px;
+		vertical-align: middle;
+
+		span {
+			line-height: 90px;
+		}
+	}
+
+	> div, > a {
+		display: block;
+		-webkit-flex: 1;
+		flex: 1;
+		width: 0;
+		font-size: 14px;
+		text-align: center;
+		text-decoration: none;
+
+		.icon:first-child {
+			font-size: 30px;
+			padding-right: 5px;
+			vertical-align: middle;
+		}
+	}
+
+	> p {
+		color: #777;
+		font-size: 12px;
+	}
+
+}

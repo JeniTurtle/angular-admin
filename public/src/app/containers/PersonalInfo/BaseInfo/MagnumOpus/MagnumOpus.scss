@@ -1,0 +1,41 @@
+.magnumOpus {
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 16px;
+	color: #4A4A4A;
+	letter-spacing: 1.5px;
+	line-height: 20px;
+
+	.magnumOpusLabel {
+		white-space: nowrap;
+	}
+
+	.magnumOpusList {
+		margin-left: 32px;
+
+		.magnumOpusItem {
+			margin-bottom: 20px;
+		}
+
+		.addMagnumOpusItem {
+			display: inline-block;
+			transition: 0.5s;
+			font-size: 16px;
+			color: #0037FF;
+			letter-spacing: 1.5px;
+			line-height: 20px;
+			cursor: pointer;
+			user-select: none;
+			&:hover {
+				opacity: 0.5;
+			}
+			&:active {
+				opacity: 1;
+			}
+		}
+	}
+}

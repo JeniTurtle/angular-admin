@@ -1,0 +1,139 @@
+.container {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	padding: 120px 0;
+	min-height: 100%;
+
+	.form {
+		margin-top: 20px;
+		padding: 40px;
+		border: 1px solid #dbdbdb;
+		background: #fff;
+		font-size: 16px;
+
+		.fieldSet {
+			margin-bottom: 5px;
+		}
+
+		.next {
+			position: relative;
+			margin: 30px auto;
+			width: 240px;
+			height: 48px;
+			border-radius: 24px;
+			background: #0037ff;
+			color: #fff;
+			font-size: 16px;
+			line-height: 48px;
+			text-align: center;
+			cursor: pointer;
+
+			&:hover {
+				background: #5F82FF;
+			}
+		}
+
+		.nextText {
+			span:hover {
+				color: #5F82FF !important;
+			}
+		}
+	}
+
+	.demos {
+		font-size: 14px;
+		margin: 0;
+		a {
+			color: #0037ff;
+			padding-right: 15px;
+			text-decoration: none;
+			&:hover {
+				color: #5F82FF;
+			}
+		}
+	}
+
+	.protocol {
+		font-size: 16px;
+
+		a {
+			color: #0037ff;
+			text-decoration: underline;
+		}
+	}
+
+	.subscript {
+		color: #999;
+		font-size: 10px;
+	}
+
+	.removebtn {
+		font-size: 16px;
+		color: #9b9b9b;
+		cursor: pointer;
+		padding: 0;
+		margin: 10px -10px;
+	}
+
+	.moreContent {
+
+		margin: 5px 0;
+		font-size: 14px;
+
+		b {
+			color: #0037ff;
+			cursor: pointer;
+		}
+
+	}
+
+	.addbtn {
+		font-size: 14px;
+		color: #0037ff;
+		text-align: right;
+		cursor: pointer;
+		text-align: right;
+
+		div:first-child {
+			width: 100px;
+			height: 32px;
+			border: 1px solid #0037ff;
+			border-radius: 16px;
+			line-height: 30px;
+			font-size: 14px;
+			text-align: center;
+			color: #0037ff;
+			float: left;
+
+			&:hover {
+				background: #5F82FF;
+				color: #fff;
+				border: 1px solid #5F82FF;
+			}
+
+			&:active {
+				background: #0037ff;
+				color: #fff;
+			}
+
+		}
+
+		div:last-child {
+			color: #9b9b9b;
+			float: left;
+			padding-left: 300px;
+			line-height: 32px;
+		}
+	}
+}
+
+.alertContent {
+	font-size: 14px;
+	text-align: center;
+
+	p:last-child {
+		color: #ff0000;
+	}
+}
+

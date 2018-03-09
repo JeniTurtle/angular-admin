@@ -1,0 +1,27 @@
+.pagination {
+	position: relative;
+	height: 60px;
+	background: #fff;
+	text-align: right;
+	font-size: 16px;
+	line-height: 60px;
+	margin-top: 10px;
+	padding-right: 30px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+	border-radius: 2px;
+
+	.pre, .next {
+		&:hover {
+			color: #5F82FF;
+		}
+	}
+
+	.counter {
+		padding: 0 30px;
+	}
+
+	.enable {
+		color: #0037ff;
+		cursor: pointer;
+	}
+}

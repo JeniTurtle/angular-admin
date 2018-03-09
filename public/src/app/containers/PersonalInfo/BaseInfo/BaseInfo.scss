@@ -1,0 +1,207 @@
+.baseInfo {
+	margin: 40px 40px 0 40px;
+
+	.editStatus {
+
+		.sex, .email, .personalProfile {
+			position: relative;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			margin-top: 30px;
+			font-size: 16px;
+			color: #4A4A4A;
+			letter-spacing: 1.5px;
+			line-height: 20px;
+		}
+
+		.sex {
+
+			.radioGroup {
+				position: absolute;
+				left: 120px;
+			}
+		}
+
+		.input {
+			align-items: center;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			position: absolute;
+			left: 120px;
+
+			.tips {
+				font-size: 14px;
+				color: #FF3B30;
+				position: absolute;
+				left: 400px;
+				word-wrap: break-word;
+				word-break: normal;
+				margin-left: 20px;
+				width: 180px;
+			}
+		}
+
+		.magnumOpus {
+			margin-top: 30px;
+		}
+
+		.personalProfile {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-align-items: flex-start;
+			-moz-align-items: flex-start;
+			-ms-align-items: flex-start;
+			-o-align-items: flex-start;
+			align-items: flex-start;
+
+			.textarea {
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: center;
+				-moz-align-items: center;
+				-ms-align-items: center;
+				-o-align-items: center;
+				align-items: center;
+				margin-top: -10px;
+				margin-left: 33px;
+			}
+
+			.tips {
+				font-size: 14px;
+				color: #FF3B30;
+				position: absolute;
+				left: 520px;
+				word-wrap: break-word;
+				word-break: normal;
+				margin-left: 20px;
+				width: 180px;
+			}
+		}
+
+		.btnGroup {
+			margin-top: 40px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			flex-direction: column;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+
+			.saveBtn, .cancelBtn {
+				transition: 0.5s;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				-moz-justify-content: center;
+				-ms-justify-content: center;
+				-o-justify-content: center;
+				justify-content: center;
+				-webkit-align-items: center;
+				-moz-align-items: center;
+				-ms-align-items: center;
+				-o-align-items: center;
+				align-items: center;
+				width: 238px;
+				height: 46px;
+				border-radius: 100px;
+				border: 1px solid #fff;
+				font-size: 16px;
+				color: #FFFFFF;
+				letter-spacing: 0;
+				cursor: pointer;
+				user-select: none;
+			}
+
+			.saveBtn {
+				background: #0037FF;
+				border: 1px solid #0037FF;
+
+				&:hover {
+					opacity: 0.5;
+				}
+				&:active {
+					opacity: 1;
+				}
+			}
+
+			.cancelBtn {
+				margin-top: 11px;
+				background: #fff;
+				font-size: 14px;
+				color: #707070;
+				letter-spacing: 0;
+
+				&:hover {
+					color: #0037FF;
+				}
+
+				&:active {
+					color: #707070;
+				}
+			}
+		}
+	}
+
+	.readOnlyStatus {
+
+		.magnumOpus {
+			margin-top: 30px;
+			margin-bottom: -20px;
+		}
+
+		.desc {
+			margin-top: 30px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			//display: flex;
+
+			.title {
+				/* 个人简介：: */
+				font-size: 16px;
+				color: #4A4A4A;
+				letter-spacing: 1.5px;
+				line-height: 20px;
+				white-space: nowrap;
+			}
+
+			.content {
+				margin-left: 32px;
+				width: 580px;
+				/* 介绍一下自己，让更多人了解你: */
+				font-family: PingFangSC-Regular;
+				font-size: 16px;
+				color: #4A4A4A;
+				letter-spacing: 1.5px;
+				line-height: 20px;
+			}
+
+		}
+	}
+}

@@ -1,0 +1,80 @@
+.checked, .unchecked, .disabled {
+	transition: 0.5s;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 140px;
+	height: 30px;
+	border-radius: 4px;
+	font-size: 16px;
+	letter-spacing: 0;
+	line-height: 16px;
+	background: #FFFFFF;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	.text {
+		max-width: 100px;
+		word-wrap: normal;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.checkedIcon {
+		position: absolute;
+		top: 13px;
+		right: 14px;
+	}
+}
+
+.disabled {
+	border: 1px solid #DBDBDB;
+	color: #AAAAAA;
+	cursor: default;
+}
+
+.checked {
+	border: 1px solid #0037FF;
+	color: #0037FF;
+
+	&:hover {
+		border-color: rgba(0, 55, 255, 0.7);
+		color: rgba(0, 55, 255, 0.7);
+	}
+
+	&:active {
+		box-shadow: 0 0 2px 1px #0037FF;
+		color: #0037FF;
+		border-color: #0037FF;
+	}
+}
+
+.unchecked {
+	border: 1px solid #DBDBDB;
+	color: #707070;
+
+	&:hover {
+		border-color: rgba(0, 55, 255, 0.7);
+		color: rgba(0, 55, 255, 0.7);
+	}
+
+	&:active {
+		box-shadow: 0 0 0px 1px #0037FF;
+		color: #0037FF;
+		border-color: #0037FF;
+	}
+}

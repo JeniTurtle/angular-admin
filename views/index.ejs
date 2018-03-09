@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户</title>
+	<meta name="keywords" content="卖剧本,剧本网,编剧网,找编剧,剧本投稿,影视剧本,原创剧本,剧本交易,免费版权保护,剧本创作,剧本改编,征稿,约稿,网络大电影剧本,院线电影剧本,电视剧剧本">
+	<meta name="description" content="云莱坞是原创剧本\小说\漫画交易最大平台，作者投稿、影视公司制片人征稿约稿、找编剧的专业网站，提供免费版权保护服务。">
+
+	<!--icon-->
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+
+	<!--iconfont-->
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_248064_wg1ly8swbm9ozuxr.css">
+
+	<!--引入jQuery-->
+	<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+
+	<!--引入ECharts-->
+	<script src="//cdn.bootcss.com/echarts/3.2.3/echarts.min.js"></script>
+
+	<!--重定向-->
+	<script>
+		// 如果url是https开头的，重定向至http
+		if (/^https/.test(location.href)) {
+			// 直接重定向至 http://user.yunlaiwu.com
+			location.href = 'http://user.yunlaiwu.com';
+		}
+	</script>
+
+	<!--自动推送-->
+	<script>
+		(function () {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+
+	<!--跨域处理-->
+	<script>
+		document.domain = 'yunlaiwu.com';
+		window.NODE_SERVER_ENV = '<%= NODE_SERVER_ENV %>';
+	</script>
+
+	<!--百度统计-->
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?2442c5792299819816a9ac91857ef5c5";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+
+</head>
+
+<body>
+
+<div id="container"
+	 style="position: relative; width: 100%; height: 100%; overflow-y: scroll; overflow-x: hidden;"></div>
+
+<script>
+	// onbeforeunload 事件在即将离开当前页面（刷新或关闭）时触发
+	window.onbeforeunload = function () {
+		return /^\#\/ipinfo/.test(location.hash) || /^\#\/ipdetail/.test(location.hash) ? '您正处于编辑状态，确认离开该页面么？' : null;
+	};
+</script>
+
+<!--外部扩展-->
+<!--<script src="../node_modules/react/dist/react.js"></script>-->
+<!--<script src="../node_modules/react-dom/dist/react-dom.js"></script>-->
+
+<% getResources().forEach(function(item) { %>
+<script src="<%= item %>"></script>
+<% }); %>
+
+<script type='text/javascript'>
+	// 美洽 连接客服？
+	(function (m, ei, q, i, a, j, s) {
+		m[a] = m[a] || function () {
+			(m[a].a = m[a].a || []).push(arguments)
+		};
+		j = ei.createElement(q),
+			s = ei.getElementsByTagName(q)[0];
+		j.async = true;
+		j.charset = 'UTF-8';
+		j.src = i + '?v=' + new Date().getUTCDate();
+		s.parentNode.insertBefore(j, s);
+	})(window, document, 'script', '//static.meiqia.com/dist/meiqia.js', '_MEIQIA');
+	_MEIQIA('entId', 18480);
+</script>
+
+<iframe id="pviframe" src="about:blank" style="display: none;"></iframe>
+
+</body>
+
+</html>

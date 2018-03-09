@@ -1,0 +1,184 @@
+.educationForm {
+
+	.representativeWorksEdit {
+
+		.avatarWrapper {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+
+			.avatar {
+				display: inline-block;
+				margin-top: 30px;
+				border-radius: 50%;
+				width: 75px;
+				height: 75px;
+			}
+		}
+
+		// 表单区域
+		.formSection {
+			margin-top: 35px;
+			padding: 20px 30px 30px 30px;
+			background: #EDF0F5;
+			border-radius: 2px;
+
+			.title {
+				font-size: 14px;
+				color: #596377;
+				font-weight: bold;
+			}
+
+			.divider {
+				margin-top: 10px;
+				height: 1px;
+				background: #D4D9E2;
+			}
+
+			.row1, .row2, .row3, .row4, .row5, .row6 {
+				margin-top: 30px;
+				display: -webkit-box;
+				display: -moz-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: space-between;
+				-moz-justify-content: space-between;
+				-ms-justify-content: space-between;
+				-o-justify-content: space-between;
+				justify-content: space-between;
+				padding: 0 30px 0 10px;
+			}
+
+			.row6 {
+				padding: 0;
+				justify-content: center;
+
+				.btnSave, .btnCancel {
+					transition: 0.3s;
+					width: 84px;
+					height: 32px;
+					line-height: 32px;
+					text-align: center;
+					box-sizing: border-box;
+					border-radius: 2px;
+					font-size: 14px;
+					color: #fff;
+					letter-spacing: 0;
+					cursor: pointer;
+					user-select: none;
+				}
+
+				.btnSave {
+					background: #434C5F;
+
+					&:hover {
+						background: #8C96A9;
+					}
+				}
+
+				.btnCancel {
+					margin-left: 35px;
+					border: 1px solid #8C96A9;
+					color: #596377;
+
+					&:hover {
+						background: #8C96A9;
+						color: #fff;
+					}
+				}
+			}
+
+			// 标签
+			.label, .labelFullWidth {
+				position: relative;
+				width: 220px;
+				font-size: 14px;
+				color: #596377;
+				letter-spacing: 0;
+				line-height: 21px;
+
+				.text {
+					position: relative;
+					left: -8px;
+
+					// 星号
+					.asterisk {
+						color: red;
+						margin-right: 3px;
+					}
+				}
+
+				.input {
+					margin-top: 8px;
+					width: 100%;
+					border-radius: 4px;
+				}
+
+				.cascader {
+					width: 100%;
+				}
+
+				.autoComplete {
+					width: 100%;
+				}
+
+				.textarea {
+					margin-top: 8px;
+					resize: none;
+				}
+
+				.selectWrapper {
+					margin-top: 8px;
+					border-radius: 4px;
+					box-sizing: border-box;
+				}
+
+				.select {
+					width: 100%;
+				}
+
+				.datePickerWrapper {
+					margin-top: 8px;
+					width: 100%;
+					border-radius: 4px;
+				}
+
+				.errorTips, .errorTipsTextArea {
+					position: absolute;
+					top: 57px;
+					left: 0;
+					width: 100%;
+					//background: yellow;
+					font-size: 12px;
+					letter-spacing: 0;
+					color: red;
+					overflow: scroll;
+
+					&::-webkit-scrollbar {
+						display: none;
+					}
+				}
+
+				.errorTipsTextArea {
+					position: relative;
+					top: 0;
+				}
+			}
+
+			// 标签 全宽
+			.labelFullWidth {
+				width: 100%;
+			}
+		}
+	}
+}
+
+

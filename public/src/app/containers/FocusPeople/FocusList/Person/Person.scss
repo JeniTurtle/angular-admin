@@ -1,0 +1,84 @@
+.person {
+	position: relative;
+	width: 429px;
+	height: 118px;
+	cursor: pointer;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+	border-radius: 2px;
+
+	.avatar {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+	}
+
+	.name {
+		position: absolute;
+		font-size: 16px;
+		color: #4A4A4A;
+		letter-spacing: 0;
+		line-height: 22px;
+		left: 120px;
+		top: 23px;
+		text-overflow: ellipsis;
+	}
+
+	.icon {
+		margin-left: 6px;
+	}
+
+	.desc, .descEllipsis {
+		position: absolute;
+		font-size: 14px;
+		color: #707070;
+		letter-spacing: 0;
+		left: 120px;
+		top: 65px;
+	}
+
+	// -webkit
+	.desc {
+		height: 14px;
+		display: -webkit-box;
+		padding-right: 8px;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+	}
+
+	//// 兼容各种浏览器
+	//.desc {
+	//	width: 220px;
+	//	position: relative;
+	//	line-height: 20px;
+	//	max-height: 40px;
+	//	overflow: hidden;
+	//}
+	//.desc::after {
+	//	content: "...";
+	//	position: absolute;
+	//	bottom: 0;
+	//	right: 0;
+	//	padding-left: 40px;
+	//	background: -webkit-linear-gradient(left, transparent, #fff 55%);
+	//	background: -o-linear-gradient(right, transparent, #fff 55%);
+	//	background: -moz-linear-gradient(right, transparent, #fff 55%);
+	//	background: linear-gradient(to right, transparent, #fff 55%);
+	//}
+
+	.descEllipsis {
+		width: 126px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis; // 超出部分...
+	}
+
+	.focusButton {
+		position: absolute;
+		left: 263px;
+		top: 46px;
+	}
+}
+
+

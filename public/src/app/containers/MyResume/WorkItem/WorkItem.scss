@@ -1,0 +1,99 @@
+.workItem {
+	position: relative;
+	margin-top: 30px;
+	//background: red;
+
+	// 按钮栏
+	.btnRow {
+		position: absolute;
+		padding-right: 35px;
+		top: 2px;
+		right: 5px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		font-size: 12px;
+		letter-spacing: 0;
+		color: #62ABFF;
+
+		.btnEdit, .btnDelete {
+			transition: 0.3s;
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				color: #0076FF;
+			}
+		}
+
+		.btnDelete {
+			margin-left: 30px;
+		}
+	}
+
+	.title {
+		font-weight: bold;
+		padding: 0 35px;
+		font-size: 14px;
+		color: #434C5F;
+		letter-spacing: 0;
+	}
+
+	.row2 {
+		padding: 0 35px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		margin-top: 10px;
+		font-size: 13px;
+		color: #596377;
+		letter-spacing: 0;
+
+		//.item {
+		//	position: relative;
+		//	padding: 0 10px;
+		//	max-width: 500px;
+		//	overflow: hidden;
+		//	white-space: nowrap;
+		//	text-overflow: ellipsis;
+		//
+		//	&:after {
+		//		position: absolute;
+		//		top: 3px;
+		//		right: 0;
+		//		content: '';
+		//		width: 1px;
+		//		height: 13px;
+		//		background: #596377;
+		//	}
+		//}
+		//
+		//.item:first-child {
+		//	padding-left: 0;
+		//}
+		//
+		//.item:last-child {
+		//
+		//	&:after {
+		//		display: none;
+		//	}
+		//}
+	}
+
+	.desc {
+		padding: 0 60px 0 35px;
+		margin-top: 10px;
+		font-size: 13px;
+		color: #8C96A9;
+		letter-spacing: 1px;
+		line-height: 18px;
+	}
+}
+
+.workItem:first-child {
+	margin-top: 20px;
+}

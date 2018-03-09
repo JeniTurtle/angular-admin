@@ -1,0 +1,67 @@
+.radio {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+
+	.iconUnchecked, .iconChecked {
+		user-select: none;
+		cursor: pointer;
+
+		.outer {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			transition: 0.5s;
+			width: 16px;
+			height: 16px;
+			border: 1px solid #DBDBDB;
+			border-radius: 50%;
+
+			.inner {
+				transition: 0.5s;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+			}
+		}
+	}
+
+	// 未选中
+	.iconUnchecked {
+
+	}
+
+	// 选中
+	.iconChecked {
+		.outer {
+			border-color: #0037FF;
+
+			.inner {
+				background: #0037FF;
+			}
+		}
+	}
+
+	.text {
+		margin-left: 4px;
+	}
+}

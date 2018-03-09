@@ -1,0 +1,58 @@
+.row {
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	margin-top: 40px;
+	width: 240px;
+
+	.input, .inputAuthCode {
+		font-size: 14px;
+		letter-spacing: 0;
+		width: 100%;
+
+		&::placeholder {
+			color: #D0D3D9;
+		}
+	}
+
+	.inputAuthCode {
+		width: 130px;
+	}
+
+	.getAuthCode {
+		position: absolute;
+		right: 0;
+		color: #0037FF;
+		// 按钮套装
+		user-select: none;
+		cursor: pointer;
+		&:hover {
+			opacity: 0.5;
+		}
+		&:active {
+			opacity: 1;
+		}
+	}
+}
+
+.hr, .hrActive {
+	/* Rectangle 3: */
+	margin-top: 10px;
+	background: #D0D3D9;
+	height: 1px;
+	width: 240px;
+
+	.errorTips {
+		position: absolute;
+		padding-top: 4px;
+		font-size: 12px;
+		color: #FF3B30;
+	}
+}
+
+.hrActive {
+	background: #0037FF;
+}

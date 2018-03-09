@@ -1,0 +1,111 @@
+h1, p {
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	padding: 120px 0;
+	min-height: 100%;
+
+	.form {
+		margin-top: 20px;
+		padding: 40px;
+		border: 1px solid #dbdbdb;
+		background: #fff;
+		font-size: 16px;
+		text-align: center;
+		line-height: 24px;
+
+		a {
+			color: #0037ff;
+			&:hover {
+				color: #5f82ff;
+			}
+		}
+
+		h1 {
+			margin: 20px 0;
+			/* 恭喜你，作品已提交审核！: */
+			font-family: PingFangSC-Regular;
+			font-size: 20px;
+			color: #4A4A4A;
+			letter-spacing: 0.24px;
+		}
+
+		p {
+			margin-bottom: 10px;
+			/* 预计2016年5月10日审核完成，审核通: */
+			font-family: PingFangSC-Regular;
+			font-size: 16px;
+			color: #707070;
+			letter-spacing: 0.19px;
+		}
+
+		.timeImg {
+			margin-top: 30px;
+		}
+
+		.protect {
+			margin-top: 100px;
+		}
+
+		.signIcon {
+			color: #FF3B30;
+			font-size: 20px;
+			vertical-align: -5px;
+			padding-right: 5px;
+		}
+
+		.dcibtn {
+			display: block;
+			text-decoration: none;
+			margin: 10px auto;
+			color: #0037ff;
+			border: 1px solid #0037ff;
+			width: 240px;
+			height: 48px;
+			border-radius: 24px;
+			line-height: 46px;
+			text-align: center;
+			font-size: 16px;
+
+			&:hover {
+				color: #5f82ff;
+				border-color: #5f82ff;
+			}
+		}
+	}
+
+}
+
+.blueLink {
+	color: #707070;
+	text-decoration: underline;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.activityNewWriter {
+	margin-top: 115px;
+	margin-bottom: 20px;
+	/* 云莱坞·中国新编剧”大赛，100万纯奖金: */
+	font-family: PingFangSC-Regular;
+	font-size: 14px;
+	color: #707070;
+	letter-spacing: 0.17px;
+
+	.activityNewWriterLink {
+		color: #0037ff;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}

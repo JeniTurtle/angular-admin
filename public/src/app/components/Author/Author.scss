@@ -1,0 +1,118 @@
+.author {
+	position: relative;
+	width: 380px;
+	height: 280px;
+	border: 1px solid #d2d2d2;
+	margin: 10px auto;
+	padding: 40px;
+	font-size: 16px;
+	color: #4a4a4a;
+	float: left;
+
+	&:nth-child(2n+1) {
+		margin: 0 20px 20px 0;
+	}
+	margin: 0 0 20px 0;
+	font-size: 14px;
+	color: #707070;
+
+	&:hover {
+		border-color: #0037ff;
+
+		.bar {
+			display: block;
+			// background: #5F82FF;
+		}
+	}
+
+	.avatar {
+		position: absolute;
+		display: block;
+		left: 20px;
+		top: 40px;
+		width: 120px;
+		height: 120px;
+		border-radius: 60px;
+		border: 1px solid #DBDBDB;
+	}
+
+	h2 {
+		font-size: 16px;
+		line-height: 16px;
+		margin: 5px 0 40px;
+		padding-left: 115px;
+		color: #4a4a4a;
+		width: 300px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	p {
+		margin-top: 10px;
+		text-align: justify;
+	}
+
+	.info {
+		margin-left: 115px;
+		height: 50px;
+		border-left: 1px solid #DBDBDB;
+		border-right: 1px solid #DBDBDB;
+		width: 80px;
+
+		>p:first-child {
+			line-height: 26px;
+			font-size: 16px;
+			text-align: center;
+		}
+		>p:last-child {
+			line-height: 16px;
+			text-align: center;
+		}
+	}
+
+	.desc {
+		position: absolute;
+		width: 100%;
+		height: 48px;
+		line-height: 24px;
+		overflow: hidden;
+		text-align: justify;
+		padding: 0 20px;
+		bottom: 48px;
+		left: 0;
+		word-break: break-all;
+	}
+
+	.bar {
+		display: none;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 48px;
+		background: #0037ff;
+
+		div {
+			position: absolute;
+			width: 80px;
+			height: 34px;
+			border-radius: 6px;
+			border: 1px solid #fff;
+			color: #fff;
+			text-align: center;
+			cursor: pointer;
+			line-height: 32px;
+			font-size: 14px;
+			top: 7px;
+		}
+
+		.edit {
+			right: 110px;
+		}
+
+		.remove {
+			right: 20px;
+		}
+	}
+}

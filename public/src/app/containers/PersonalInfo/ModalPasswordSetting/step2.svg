@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="185px" height="50px" viewBox="0 0 185 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>步骤</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录注册" transform="translate(-1068.000000, -1002.000000)">
+            <g id="Group-2-Copy-4" transform="translate(971.000000, 855.000000)">
+                <g id="步骤" transform="translate(97.500000, 148.000000)">
+                    <g id="Group-8">
+                        <rect id="Rectangle-15" fill="#0037FF" x="42" y="12" width="116" height="1"></rect>
+                        <circle id="Oval-Copy" stroke="#0037FF" fill="#FFFFFF" cx="161" cy="12" r="12"></circle>
+                        <text id="2" font-family="MicrosoftSansSerif, Microsoft Sans Serif" font-size="14" font-weight="normal" fill="#0037FF">
+                            <tspan x="157" y="17">2</tspan>
+                        </text>
+                        <text id="验证手机号" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#0037FF">
+                            <tspan x="0" y="47">验证手机号</tspan>
+                        </text>
+                        <text id="重置密码" font-family="PingFangSC-Regular, PingFang SC" font-size="12" font-weight="normal" fill="#0037FF">
+                            <tspan x="137" y="47">重置密码</tspan>
+                        </text>
+                        <path d="M28.4497475,14.1923882 L24.9142136,10.6568542 L23.5,12.0710678 L27.7426407,16.3137085 L28.4497475,17.0208153 L35.5208153,9.94974747 L34.1066017,8.53553391 L28.4497475,14.1923882 Z M30,25 C23.0964406,25 17.5,19.4035594 17.5,12.5 C17.5,5.59644063 23.0964406,0 30,0 C36.9035594,0 42.5,5.59644063 42.5,12.5 C42.5,19.4035594 36.9035594,25 30,25 Z" id="Combined-Shape" fill="#0037FF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

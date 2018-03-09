@@ -1,0 +1,181 @@
+.successWrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+
+	.successImg {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.tips1 {
+		/* 恭喜你，重新绑定成功!: */
+		font-family: PingFangSC-Regular;
+		font-size: 20px;
+		color: #4A4A4A;
+		letter-spacing: 0.24px;
+		margin-bottom: 10px;
+	}
+
+	.tips2 {
+		/* 请使用新手机号登录: */
+		font-family: PingFangSC-Regular;
+		font-size: 14px;
+		color: #9B9B9B;
+		letter-spacing: 0;
+		margin-bottom: 30px;
+	}
+
+	.btnIKnow {
+		width: 100px;
+		height: 34px;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+		-ms-align-items: center;
+		-o-align-items: center;
+		align-items: center;
+		box-sizing: border-box;
+		/* Rectangle Copy: */
+		border: 1px solid #0037FF;
+		border-radius: 4px;
+		/* 知道了: */
+		font-family: PingFangSC-Regular;
+		font-size: 14px;
+		color: #0037FF;
+		letter-spacing: 0;
+		cursor: pointer;
+		user-select: none;
+		margin-bottom: 30px;
+	}
+}
+
+.row1 {
+	margin: 40px 20px 41px 20px;
+	width: 420px;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+
+	.mobileInput {
+		position: absolute;
+		right: 0;
+	}
+}
+
+.row2 {
+	margin: 0 20px 40px 20px;
+	width: 420px;
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+
+	.smsInput {
+		position: absolute;
+		right: 130px;
+	}
+
+	.authCode {
+		transition: 0.5s;
+		position: absolute;
+		right: 0;
+		font-size: 16px;
+		color: #0037FF;
+		letter-spacing: 0.19px;
+		cursor: pointer;
+		user-select: none;
+		&:hover {
+			color: rgba(0, 55, 255, 0.5);
+		}
+		&:active {
+			color: #0037FF;
+		}
+	}
+
+	.authCodeResend {
+		transition: 0.5s;
+		position: absolute;
+		right: 0;
+		font-size: 16px;
+		color: #DBDBDB;
+		letter-spacing: 0.19px;
+		user-select: none;
+	}
+}
+
+.buttons {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: flex-end;
+	-moz-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+	-o-justify-content: flex-end;
+	justify-content: flex-end;
+	margin-bottom: 30px;
+
+	.confirm, .cancel {
+		margin-right: 20px;
+	}
+}
+
+.title {
+	font-size: 16px;
+	color: #4A4A4A;
+	letter-spacing: 0.19px;
+}
+
+.errorTipsWrapper {
+	position: relative;
+	.errorTips {
+		position: absolute;
+		left: 20px;
+		width: 220px;
+		word-break: break-all;
+		word-wrap: break-word;
+		font-family: MicrosoftSansSerif;
+		font-size: 14px;
+		color: #FF3B30;
+		letter-spacing: 0.17px;
+	}
+}
+

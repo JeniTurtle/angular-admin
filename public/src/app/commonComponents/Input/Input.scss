@@ -1,0 +1,41 @@
+.wrapper {
+	position: relative;
+	transition: 0.5s;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 400px;
+	height: 40px;
+	border: 1px solid #DBDBDB;
+	box-sizing: border-box;
+
+	.input {
+		padding-left: 10px;
+		padding-right: 10px;
+		color: #4a4a4a;
+		letter-spacing: 0.17px;
+
+		&::placeholder {
+			color: #9B9B9B;
+			letter-spacing: 0.17px;
+		}
+	}
+
+	.inputWordsCount {
+		color: inherit;
+		position: absolute;
+		right: 10px;
+		/* 0/20: */
+		color: #9B9B9B;
+		letter-spacing: 0.17px;
+	}
+}
+
+

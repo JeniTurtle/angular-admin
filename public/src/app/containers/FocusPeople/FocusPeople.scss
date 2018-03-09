@@ -1,0 +1,81 @@
+.wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	width: 1024px;
+	height: 100%;
+	margin: 56px auto 20px auto;
+
+	.focusPeople {
+		min-height: 600px;
+		width: 100%;
+
+		.spin {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+		}
+
+		.tabGroup {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-align-items: center;
+			-moz-align-items: center;
+			-ms-align-items: center;
+			-o-align-items: center;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 0 50px;
+			width: 100%;
+			height: 50px;
+			font-size: 14px;
+			color: #434C5F;
+			letter-spacing: 0.17px;
+			background: #FFFFFF;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+			border-radius: 2px;
+		}
+
+		.searchBar {
+			width: 240px;
+			margin-bottom: 20px;
+		}
+
+		.pagination {
+			//margin-top: 10px;
+		}
+	}
+}
+
+.noData {
+	margin-top: 10px;
+	padding: 152px 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 2px;
+}
+
+

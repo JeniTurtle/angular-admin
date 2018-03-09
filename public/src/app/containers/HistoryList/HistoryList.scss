@@ -1,0 +1,141 @@
+.container {
+	position: relative;
+	width: 1060px;
+	margin: 0 auto;
+	padding: 50px 0;
+
+	.emptyHolder {
+
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+		img {
+			display: block;
+			margin: 50px auto;
+		}
+
+	}
+
+	.history {
+		position: relative;
+		width: 100%;
+		height: 198px;
+		background: #fff;
+		font-size: 16px;
+
+		h2 {
+			padding: 0 80px;
+			height: 66px;
+			border-bottom: 1px solid #d2d2d2;
+			font-size: 24px;
+			line-height: 66px;
+		}
+
+		p {
+			padding: 0 80px;
+			line-height: 20px;
+		}
+
+		.edit {
+			position: absolute;
+			color: #0037ff;
+			top: 20px;
+			right: 130px;
+			cursor: pointer;
+		}
+
+		.remove {
+			position: absolute;
+			color: #0037ff;
+			top: 20px;
+			right: 80px;
+			cursor: pointer;
+		}
+
+		.disable {
+			color: #999 !important;
+			cursor: default;
+		}
+	}
+
+	.ctrl {
+		width: 100%;
+		height: 60px;
+		padding: 0 80px;
+		background: #fff;
+		font-size: 16px;
+		line-height: 60px;
+		border-top: 1px solid #d2d2d2;
+
+		.add {
+			float: right;
+			color: #0037ff;
+			cursor: pointer;
+
+			&:before {
+				content: ' ';
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				vertical-align: -2px;
+				background-image: url("data:image/png;base64,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");
+				background-size: 100% 100%;
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.loadingContainer {
+
+		position: relative;
+		width: 100%;
+		height: 100px;
+
+	}
+
+}
+
+.modal {
+
+	:global {
+
+		.modal-dialog {
+
+			width: 1060px !important;
+			margin-top: 80px !important;
+
+		}
+
+		.modal-header {
+			text-align: center;
+		}
+
+		.modal-body {
+			padding: 50px;
+			max-height: 400px;
+			overflow-y: scroll;
+			overflow-x: hidden;
+		}
+
+		.modal-footer {
+			text-align: center;
+
+			button {
+				padding: 5px 30px;
+				font-size: 16px;
+				margin: 0 10px;
+
+				&.ok {
+					color: #fff;
+					background: #0037ff;
+					border: none;
+				}
+
+			}
+
+		}
+
+	}
+
+}

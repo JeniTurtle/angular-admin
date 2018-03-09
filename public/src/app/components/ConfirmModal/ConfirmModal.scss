@@ -1,0 +1,59 @@
+.confirmModal {
+	text-align: center;
+	padding: 0 65px;
+
+	.tips {
+		margin-top: 40px;
+		color: #596377;
+		font-size: 18px;
+	}
+
+	.bottomBtnRow {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-ms-justify-content: center;
+		-o-justify-content: center;
+		justify-content: center;
+		margin-top: 48px;
+		margin-bottom: 35px;
+
+		.confirm, .cancel {
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
+			width: 84px;
+			height: 32px;
+			line-height: 31px;
+			text-align: center;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: #fff;
+			background: #596377;
+			border-radius: 2px;
+			cursor: pointer;
+			user-select: none;
+
+			&:hover {
+				background: #8c96a9;
+			}
+		}
+
+		.cancel {
+			margin-left: 32px;
+			border: 1px solid #8c96a9;
+			color: #596377;
+			background: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}

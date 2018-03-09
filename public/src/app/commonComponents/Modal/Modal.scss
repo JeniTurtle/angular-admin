@@ -1,0 +1,100 @@
+.modalWrapper {
+	transition: 0.5s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+	-o-align-items: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.20);
+	z-index: 999;
+
+	.modal {
+		background: #FFFFFF;
+		box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.30);
+		border-radius: 5px;
+
+		.title {
+			min-width: 460px;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: space-between;
+			-moz-justify-content: space-between;
+			-ms-justify-content: space-between;
+			-o-justify-content: space-between;
+			justify-content: space-between;
+			background: #F6F6F6;
+			box-shadow: 0 1px 0 0 #FBFBFB;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+
+			.titleText {
+				margin: 10px 0 10px 20px;
+				font-size: 16px;
+				color: #4A4A4A;
+				letter-spacing: 0;
+			}
+
+			.closeIcon {
+				margin-right: 20px;
+				cursor: pointer;
+			}
+		}
+
+		.content {
+			margin-left: 20px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 14px;
+			color: #9B9B9B;
+			letter-spacing: 0.17px;
+		}
+
+		.buttons {
+			position: relative;
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-justify-content: center;
+			-moz-justify-content: center;
+			-ms-justify-content: center;
+			-o-justify-content: center;
+			justify-content: center;
+			margin-bottom: 30px;
+
+			.errorTips {
+				position: absolute;
+				left: 157px;
+				line-height: 25px;
+				/* 该项不能为空: */
+				font-family: MicrosoftSansSerif;
+				font-size: 14px;
+				color: #FF3B30;
+				letter-spacing: 0.17px;
+			}
+
+			.confirm, .cancel {
+				margin-right: 20px;
+			}
+		}
+	}
+}
